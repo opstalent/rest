@@ -1,0 +1,55 @@
+{
+  "name" : "opstalent/rest",
+  "description" : "REST Bundle",
+  "type" : "symfony-bundle",
+  "authors" : [
+    {
+      "name" : "Szymon Kunowski",
+      "email" : "szymon.kunowski@opstalent.it",
+      "homepage": "https://github.com/auamarto"
+    },
+    {
+      "name" : "Patryk Grudniewski",
+      "email" : "patgrudniewski@gmail.com",
+      "homepage": "https://github.com/patgrudniewski"
+    }
+  ],
+  "keywords" : [
+    "symfony 3.4", "rest"
+  ],
+  "license" : [
+    "MIT"
+  ],
+  "require" : {
+    "opstalent/crud": "1.*"
+  },
+  "require-dev" : {
+    "phpunit/phpunit": "^6.2",
+    "matthiasnoback/symfony-dependency-injection-test": "^2.2",
+    "squizlabs/php_codesniffer": "^3.1.1"
+  },
+  "suggest": {
+  },
+  "autoload" : {
+    "psr-0" : {
+      "Opstalent\\CrudBundle" : "src/"
+    },
+    "psr-4": {
+      "Opstalent\\CrudBundle\\" : "src/"
+    }
+  },
+  "autoload-dev" : {
+    "psr-0" : {
+      "Opstalent\\CrudBundle\\Tests\\" : "tests/"
+    },
+    "psr-4": {
+      "Opstalent\\CrudBundle\\Tests\\" : "tests/"
+    }
+  },
+  "repositories" : [{
+    "type" : "vcs",
+    "url" : "https://github.com/opstalent/rest.git",
+    "no-api": true
+  }]
+
+}
