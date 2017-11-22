@@ -32,18 +32,18 @@
   },
   "autoload" : {
     "psr-0" : {
-      "Opstalent\\CrudBundle" : "src/"
+      "Opstalent\\RestBundle" : "src/"
     },
     "psr-4": {
-      "Opstalent\\CrudBundle\\" : "src/"
+      "Opstalent\\RestBundle\\" : "src/"
     }
   },
   "autoload-dev" : {
     "psr-0" : {
-      "Opstalent\\CrudBundle\\Tests\\" : "tests/"
+      "Opstalent\\RestBundle\\Tests\\" : "tests/"
     },
     "psr-4": {
-      "Opstalent\\CrudBundle\\Tests\\" : "tests/"
+      "Opstalent\\RestBundle\\Tests\\" : "tests/"
     }
   },
   "repositories" : [{
