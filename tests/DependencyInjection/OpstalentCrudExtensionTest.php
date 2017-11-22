@@ -1,16 +1,16 @@
 <?php
 
-namespace Opstalent\CrudBundle\Tests\Annotation;
+namespace Opstalent\RestBundle\Tests\Annotation;
 
 use Matthias\SymfonyDependencyInjectionTest\PhpUnit\AbstractExtensionTestCase;
-use Opstalent\CrudBundle\DependencyInjection\OpstalentCrudExtension;
+use Opstalent\RestBundle\DependencyInjection\OpstalentRestExtension;
 
 /**
- * Class OpstalentCrudExtensionTest
+ * Class OpstalentRestExtensionTest
  * @author Szymon Kunowski <szymon.kunowski@gmail.com>
- * @package Opstalent\CrudBundle
+ * @package Opstalent\RestBundle
  */
-class OpstalentCrudExtensionTest extends AbstractExtensionTestCase
+class OpstalentRestExtensionTest extends AbstractExtensionTestCase
 {
     /**
      * @return array
@@ -18,12 +18,12 @@ class OpstalentCrudExtensionTest extends AbstractExtensionTestCase
     protected function getContainerExtensions()
     {
         return [
-            new OpstalentCrudExtension(),
+            new OpstalentRestExtension(),
         ];
     }
 
     /**
-     * @group OpstalentCrudExtension
+     * @group OpstalentRestExtension
      * @group FormFactory
      * @test
      */
@@ -32,7 +32,7 @@ class OpstalentCrudExtensionTest extends AbstractExtensionTestCase
         $this->load();
         $this->assertContainerBuilderHasService(
             'opstalent.form_factory.service',
-            'Opstalent\CrudBundle\FormFactory'
+            'Opstalent\RestBundle\FormFactory'
         );
     }
 }
