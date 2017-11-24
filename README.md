@@ -1,13 +1,9 @@
-REST Bundle
-===================
+# REST Bundle
 
-Description
-
-----------
+## Description
 
 
-Install
--------------
+## Install
 
 #### Composer
 Install package via composer:
@@ -30,20 +26,13 @@ public function registerBundles()
 ```
 
 
-----------
-
-Annotations
--------------
+## Annotations
 
 
-
-----------
-
-API Reference
--------------
+## API Reference
 
 
-License
--------------
+## License
+
 
 [This bundle is under the MIT license.](LICENSE)
